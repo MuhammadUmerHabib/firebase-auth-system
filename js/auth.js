@@ -34,16 +34,14 @@ onAuthStateChanged(auth, (user) => {
         // User is signed in, see docs for a list of available properties
         // https://firebase.google.com/docs/reference/js/auth.user
         const uid = user.uid;
-        if (window.location.pathname !== "/dashboard.html") {
-            window.location.pathname = "/dashboard.html"
-    }
-
+        if (!window.location.pathname.includes("dashboard.html")) {
+            window.location.href = "./dashboard.html";
+        }
     } else {
         // User is signed out
         // ...
-        console.log("User is signed out");
-        if (window.location.pathname === "/dashboard.html") {
-            window.location.href = "index.html";
+        if (window.location.pathname.includes("dashboard.html")) {
+            window.location.href = "./index.html";
         }
     }
 });
@@ -90,7 +88,7 @@ const register = (e) => {
 }
 
 const logout = () => {
-    
+
 }
 
 
