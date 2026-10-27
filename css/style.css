@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    color: rgb(23, 23, 23);
+    background: rgb(255, 255, 255);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #E4E7EB;
+    padding: 0 64px;
+    display: flex;
+    align-items: center;
+}
+
+header>img {
+    width: 200px;
+}
+
+.container {
+    width: 100%;
+    height: 86.6vh;
+    display: flex;
+}
+
+.visual-panel {
+    width: 50%;
+    background: url(../assets/men.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding-bottom: 30px;
+    padding-right: 5px;
+}
+
+.caption-card {
+    width: 300px;
+    padding: 20px 24px;
+    border-radius: 12px;
+    background: rgb(255, 255, 255);
+
+}
+
+.form-pannel {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 64px;
+    color: rgb(23, 23, 23);
+    font-size: 16px;
+    font-family: inter;
+    display: flex;
+    flex-direction: column;
+}
+
+.eyebrow {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    color: rgb(104, 104, 104);
+}
+
+.subtext {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgb(104, 104, 104);
+    margin: 8px 0 0 0;
+}
+
+form {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(23, 23, 23);
+    margin: 20px 0 0 0;
+    gap: 10px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(23, 23, 23);
+    margin: 0 0 8px 0;
+}
+
+input {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 16px 16px;
+    border: 1px solid #E4E7EB;
+    border-radius: 8px;
+}
+
+form > button {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background: rgb(255, 90, 54);
+    border: none;
+    border-radius: 8px;
+    padding: 16px 16px;
+}
+
+.link {
+    width: 400px;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(104, 104, 104);
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+
+.link>a {
+    font-size: 16px;
+    font-weight: 800;
+    text-decoration: none;
+    color: rgb(23, 23, 23);
+}
+
+@media (min-width: 0) and (max-width: 768px) {
+
+    .visual-panel {
+        display: none;
+    }
+
+    .form-pannel {
+        width: 100%;
+        padding: 5px;
+    }
+
+    form {
+        width: 100%;
+    }  
+
+    .link {
+        width: 100%;
+    }
+
+    header {
+        padding: 0;
+    }
+
+}
